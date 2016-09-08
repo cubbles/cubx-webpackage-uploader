@@ -1,6 +1,6 @@
 {
   "name": "cubx-webpackage-uploader",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "description": "Uploads a single webpackage into a Cubbles Base.",
   "author": "Judit Ross <judit.ross@incowia.com>",
   "contributors": [
@@ -22,7 +22,7 @@
   },
   "scripts": {
     "prepublish": "npm run lint",
-    "lint": "standard",
+    "lint": "eslint lib bin test *.js",
     "start": "node ./bin/uploadWebpackage",
     "test": "mocha",
     "generate-docs": "node_modules/.bin/jsdoc.cmd -c jsDocConf.json -R ./README.md"
@@ -32,6 +32,7 @@
     "cubx-authentication-client": "^1.0.0",
     "cubx-webpackage-document-api": "^3.0.0",
     "fs": "^0.0.2",
+    "https-proxy-agent": "^1.0.0",
     "lodash": "^3.10",
     "mime": "^1.2.11",
     "nano": "^6.0.2",
