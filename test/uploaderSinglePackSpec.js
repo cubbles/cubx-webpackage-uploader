@@ -17,7 +17,7 @@ describe('uploader', function () {
       },
       'source': 'test/testdata/packages/uploader-test-package1',
       'target': {
-        'url': 'http://boot2docker.me/base-api-upload-test',
+        'url': 'http://cubbles-base-local/base-api-upload-test',
         'path': '_api/upload',
         'proxy': ''
       },

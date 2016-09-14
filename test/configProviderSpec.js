@@ -25,11 +25,11 @@ describe('configProvider', function () {
       assert(typeof init.getConfig().nano === 'object', 'config.nano is not an object');
       assert(typeof init.getConfig().nano.log === 'function', 'config.nano is not an object');
       assert(typeof init.getConfig().nano.requestDefaults === 'object', 'config.nano.log is not a function');
-      assert.equal(init.getConfig().nano.requestDefaults.proxy, 'http:/proxy.de:80',
+      assert.equal(init.getConfig().nano.requestDefaults.proxy.href, 'http:/proxy.de:80',
         'unexpected value of config.nano.requestDefaults.proxy');
       assert(typeof init.getConfig().sourcePath === 'string', 'config.path is not a string');
       assert(init.getConfig().sourcePath.indexOf('data\\packages\\package1') > -1,
-        'unexpected value of config.sourcePaht');
+        'unexpected value of config.sourcePath');
       assert(init.getConfig().debug === true);
     });
   });

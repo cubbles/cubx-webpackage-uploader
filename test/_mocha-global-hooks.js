@@ -9,7 +9,7 @@
 /* globals before, after */
 'use strict';
 var opts = {
-  couchUrl: 'http://admin:admin@boot2docker.me:5984',
+  couchUrl: 'http://admin:admin@cubbles-base-local:5984',
   dbNamePrefix: 'webpackage-store',
   storeName: 'base-api-upload-test',
   finallyRemoveTestData: process.env.REMOVE_TESTDATA ? JSON.parse(process.env.REMOVE_TESTDATA) : true
