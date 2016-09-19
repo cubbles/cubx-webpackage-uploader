@@ -39,12 +39,11 @@ describe('uploader', function () {
       done();
     }
 
-    uploader.uploadSingleWebpackage(options, function (err, success) {
+    uploader.uploadSingleWebpackage(options, function (err, successObject) {
       if (err) {
         console.log('err: ', err);
         done(err);
       } else {
-        var successObject = JSON.parse(success);
         assert(successObject.ok === true, 'returns \'ok\'.');
         assert(successObject.id === 'uploader-test-package1@0.1.0-SNAPSHOT', 'returned ' + successObject.id);
 

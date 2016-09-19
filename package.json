@@ -39,7 +39,8 @@
     "promise": "^7.0.4",
     "url-join": "^0.0.1",
     "walk": "^2.3.4",
-    "yargs": "^3.15.0"
+    "yargs": "^3.15.0",
+    "multi-glob": "1.0.1"
   },
   "devDependencies": {
     "standard": "^5.4.1",
