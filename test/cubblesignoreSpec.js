@@ -5,7 +5,7 @@ var _ = require('lodash');
 var testdata = require('./testdata/userdata.js');
 var uploader;
 
-describe('uploader', function () {
+describe('ignoreSpec', function () {
   var defaults;
   beforeEach(function () {
     var Uploader = require('../lib/uploader');
@@ -32,6 +32,7 @@ describe('uploader', function () {
       if (err) {
         console.log('err: ', err);
         done(err);
+        return;
       } else {
         // console.log(successObject);
         assert(successObject.ok === true, 'returns \'ok\'.');
@@ -47,6 +48,7 @@ describe('uploader', function () {
       if (err) {
         console.log('err: ', err);
         done(err);
+        return;
       } else {
         // console.log(successObject);
         assert.equal(successObject.dryRun, true);
