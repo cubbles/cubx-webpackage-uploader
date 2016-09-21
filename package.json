@@ -22,6 +22,7 @@
   },
   "scripts": {
     "prepublish": "npm run lint",
+    "preversion": "npm run lint",
     "lint": "eslint lib bin test *.js",
     "start": "node ./bin/uploadWebpackage",
     "test": "mocha",
