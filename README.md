@@ -1,6 +1,6 @@
 # cubx-webpackage-uploader
 
-[![npm][npm-image]][npm-url]
+[![GitHub version](https://badge.fury.io/gh/cubbles%2Fcubx-webpackage-uploader.svg)](https://badge.fury.io/gh/cubbles%2Fcubx-webpackage-uploader)
 
 This lib is part of the Cubbles platform. Use this lib to upload webpackages from Client to Base.
 
@@ -66,6 +66,3 @@ At the root folder of a webpackage developers can (optionally) provide a file na
 ### Run (standalone)
 
     cubx-webpackage-uploader <config path e.g. ./folder/config.json>
-
-[npm-image]: https://img.shields.io/npm/v/cubx-webpackage-uploader.svg?style=flat
-[npm-url]: https://npmjs.org/package/cubx-webpackage-uploader
