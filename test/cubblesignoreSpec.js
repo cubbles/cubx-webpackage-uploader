@@ -15,7 +15,7 @@ describe('ignoreSpec', function () {
         'user': testdata.users.user1.logins.local.login,
         'password': testdata.users.user1.password
       },
-      'source': 'test/testdata/cubblesignoreSpec/uploader-test-ignore1',
+      'source': 'test/testdata/ignoreSpec/uploader-test-ignore1',
       'target': {
         'url': 'http://cubbles-base-local/base-api-upload-test',
         'path': '_api/upload',
@@ -52,8 +52,8 @@ describe('ignoreSpec', function () {
       } else {
         // console.log(successObject);
         assert.equal(successObject.dryRun, true);
-        assert.equal(successObject.filesForUpload.length, 5);
-        assert.equal(successObject.filesIgnored.length, 2);
+        assert.equal(successObject.filesForUpload.length, 6);
+        assert.equal(successObject.filesIgnored.length, 3);
       }
       done();
     });
