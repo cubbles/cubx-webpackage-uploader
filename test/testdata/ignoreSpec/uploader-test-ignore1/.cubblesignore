@@ -1,6 +1,8 @@
 # my files
 
-**/*.log
+**/*.test
 **/tmp.txt
+
+ignoredDir/
 
 # end of file

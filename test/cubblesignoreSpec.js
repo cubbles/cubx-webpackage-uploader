@@ -1,4 +1,4 @@
-/*global require,describe,beforeEach,it*/
+/* global require,describe,beforeEach,it */
 'use strict';
 var assert = require('assert');
 var _ = require('lodash');
@@ -50,10 +50,12 @@ describe('ignoreSpec', function () {
         done(err);
         return;
       } else {
-        // console.log(successObject);
+        console.log(successObject);
         assert.equal(successObject.dryRun, true);
         assert.equal(successObject.filesForUpload.length, 6);
-        assert.equal(successObject.filesIgnored.length, 3);
+        assert.equal(successObject.filesIgnored.length, 6);
+        // assert.equal(successObject.filesForUpload.length, 9);
+        // assert.equal(successObject.filesIgnored.length, 3);
       }
       done();
     });
