@@ -1,8 +1,10 @@
 # my files
 
-**/*.test
+**/*.xxx
 **/tmp.txt
 
-ignoredDir/
+ignoreTest
+
+**/ignoredDir
 
 # end of file

@@ -52,10 +52,8 @@ describe('ignoreSpec', function () {
       } else {
         console.log(successObject);
         assert.equal(successObject.dryRun, true);
-        assert.equal(successObject.filesForUpload.length, 6);
-        assert.equal(successObject.filesIgnored.length, 6);
-        // assert.equal(successObject.filesForUpload.length, 9);
-        // assert.equal(successObject.filesIgnored.length, 3);
+        assert.equal(successObject.filesForUpload.length, 7);
+        assert.equal(successObject.filesIgnored.length, 7);
       }
       done();
     });
