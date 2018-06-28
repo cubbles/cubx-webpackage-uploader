@@ -1,6 +1,6 @@
 {
   "name": "cubx-webpackage-uploader",
-  "version": "3.3.3",
+  "version": "3.3.4",
   "description": "Uploads a single webpackage into a Cubbles Base.",
   "author": "Judit Ross <judit.ross@incowia.com>",
   "contributors": [
