@@ -1,4 +1,4 @@
-/*global require,describe,beforeEach,it*/
+/* global require,describe,beforeEach,it */
 'use strict';
 var assert = require('assert');
 var _ = require('lodash');
@@ -36,8 +36,8 @@ describe('dryRunSpec', function () {
 
     uploader.uploadSingleWebpackage(options, function (err, successObject) {
       console.log('err: ', err);
-      assert.equal(err.response.res.statusCode, 403);
-      assert.equal(err.response.res.text, '{"error":"USER_NOT_FOUND"}');
+      assert.strictEqual(err.response.res.statusCode, 403);
+      assert.strictEqual(err.response.res.text, '{"error":"USER_NOT_FOUND"}');
       done();
     });
   });

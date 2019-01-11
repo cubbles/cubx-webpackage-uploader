@@ -18,12 +18,12 @@
     "url": "https://github.com/cubbles/cubx-webpackage-uploader.git"
   },
   "bin": {
-    "cubx-webpackage-uploader": "./bin/uploadWebpackage"
+    "cubx-webpackage-uploader": "./bin/uploadWebpackage.js"
   },
   "scripts": {
     "prepublish": "npm run lint",
     "preversion": "npm run lint",
-    "lint": "eslint lib bin test *.js",
+    "lint": "eslint --ext .js lib/ bin/ test/",
     "start": "node ./bin/uploadWebpackage",
     "test": "mocha"
   },
