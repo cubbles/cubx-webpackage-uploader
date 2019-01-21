@@ -4,6 +4,7 @@ var assert = require('assert');
 var _ = require('lodash');
 var testdata = require('./testdata/userdata.js');
 var uploader;
+require('./_mocha-global-hooks');
 
 describe('ignoreSpec', function () {
   var defaults;
