@@ -39,7 +39,7 @@ async function initDb () {
   await addDocument('acls', testdata.acls.aclStore1);
 }
 
-async function destroyDb() {
+async function destroyDb () {
   await removeDocument('_users', testdata.users.user1._id);
   await removeDocument('groups', testdata.groups.group1._id);
   await removeDocument('acls', testdata.acls.aclStore1._id);
