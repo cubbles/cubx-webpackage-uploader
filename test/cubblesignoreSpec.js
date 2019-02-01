@@ -8,7 +8,7 @@ require('./_mocha-global-hooks');
 
 describe('ignoreSpec', function () {
   var defaults;
-  beforeEach(function () {
+  beforeEach(async () => {
     var Uploader = require('../lib/uploader');
     uploader = new Uploader();
     defaults = {
